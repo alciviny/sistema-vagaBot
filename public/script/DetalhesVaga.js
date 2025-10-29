@@ -26,6 +26,8 @@ function traduzirContrato(tipoContrato) {
 function criarCartaoSobre(vaga) {
     const dataFormatada = new Date(vaga.data).toLocaleDateString('pt-BR');
     const contratoTraduzido = traduzirContrato(vaga.contrato);
+
+    // Formata a descrição: substitui quebras de linha (\n) por tags <br>
     const descricaoFormatada = vaga.descricao.replace(/\n/g, '<br>');
 
     return ` 
