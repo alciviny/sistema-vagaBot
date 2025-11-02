@@ -1,5 +1,5 @@
 // --- Configurações e Constantes ---
-const API_URL = 'http://localhost:3000/vagas/filtrar';
+const API_URL = '/vagas/filtrar';
 
 // --- Seletores de Elementos do DOM ---
 const formulario = document.querySelector('.search-container');
